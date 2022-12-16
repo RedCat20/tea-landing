@@ -1,0 +1,124 @@
+@import "../../assets/fonts/fonts";
+
+.order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 99px;
+
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}
+
+.booklets {
+  display: grid;
+  gap: 7px;
+  //align-items: stretch;
+  align-items: center;
+  grid-template-areas:
+  "a b d"
+  "a c d";
+  & > img {
+    max-width: 100%;
+  }
+  & > img:nth-child(1) {
+    grid-area: a;
+  }
+  & > img:nth-child(2) {
+    grid-area: b;
+  }
+  & > img:nth-child(3) {
+    grid-area: c;
+  }
+  & > img:nth-child(4) {
+    grid-area: d;
+  }
+}
+
+.form {
+
+  &Title {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+    color: #2B3E00;
+
+    margin-bottom: 11px;
+  }
+
+  &Subtitle {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-weight: 500;
+    width: 200px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B3E00;
+    @media screen and (max-width: 991px) {
+      width: auto;
+    }
+  }
+
+  &Fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 49px;
+    margin-bottom: 59px;
+
+  }
+
+  &Total {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B3E00;
+
+    margin-bottom: 18px;
+  }
+
+  &Buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 19px;
+    justify-content: start;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      button {
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  margin-bottom: 30px;
+  column-gap: 30px;
+  @media screen and (max-width: 767px) {
+    column-gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #2B3E00;
+
+  & > span:nth-child(2) {
+    text-align: right;
+    margin: 0 auto;
+  }
+
+  img {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

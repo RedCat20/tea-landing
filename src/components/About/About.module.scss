@@ -1,0 +1,126 @@
+@import "../../assets/fonts/fonts";
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 111px;
+  min-height: 808px;
+  margin-bottom: 96px;
+
+  @media screen and (max-width: 1199px) {
+    min-height: 502px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 51px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 0;
+  }
+
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 321px;
+    min-height: 808px;
+    margin-right: 51px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: auto;
+      min-height: 100%;
+      margin-right: 40px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 55px 88px 55px 45px;
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding: 40px 27px;
+    }
+  }
+
+  &Title {
+    font-feature-settings: 'salt' on;
+    letter-spacing: 0.035em;
+    font-family: 'BerkshireSwash', Arial, sans-serif;
+    font-size: 50px;
+    line-height: 59px;
+    color: #2B3E00;
+    position: relative;
+    left: -5px;
+    margin-bottom: 23px;
+
+    @media screen and (max-width: 1199px) {
+      font-family: 'BerkshireSwash', Arial, sans-serif;
+      font-size: 50px;
+      line-height: 59px;
+      font-weight: 400;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 39.3356px;
+      line-height: 47px;
+    }
+  }
+
+  &Text {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2B3E00;
+
+    margin-bottom: 46px;
+
+    @media screen and (max-width: 1199px) {
+      font-family: 'PT-Root-UI_Medium 400', Arial, sans-serif;
+      font-size: 15.9876px;
+      line-height: 21px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &Link {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: underline;
+    color: #93A603;
+    @media screen and (max-width: 1199px) {
+      font-size: 17.764px;
+      line-height: 22px;
+    }
+  }
+
+  &Image {
+    flex: 1 1 auto;
+    min-height: 832px;
+    max-width: 808px;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+      min-height: 100%;
+    }
+    @media screen and (max-width: 767px) {
+      flex: 2;
+      min-height: 378px;
+    }
+  }
+}
+

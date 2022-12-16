@@ -1,0 +1,87 @@
+.block {
+  box-shadow: 0px 4px 101px -11px rgba(131, 151, 0, 0.15);
+  padding: 50px 58px 74px 58px;
+
+  .title {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 2px;
+  }
+
+  .subtitle {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #93A603;
+  }
+
+  &.light {
+    .title {
+      color: #2B3E00;
+    }
+    .subtitle {
+      color: #ADADAD;
+    }
+    .price {
+      color: #93A603;
+    }
+  }
+
+  &.dark {
+    background: #93A603;
+    .title {
+      color: #FFFFFF;
+    }
+    .subtitle {
+      color: #2B3E00;
+    }
+    .price {
+      color: #FFFFFF;
+    }
+  }
+
+  .title {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #2B3E00;
+    margin-bottom: 2px;
+  }
+
+  .subtitle {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ADADAD;
+    margin-bottom: 8px;
+  }
+
+  .price {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  ul {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    padding-left: 20px;
+    li {
+      margin-bottom: 23px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.catalog {
+  //width: 118px;
+
+  //padding: 115px 96px 156px;
+  padding: 96px 0 96px;
+
+  &List {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 138px;
+    @media screen and (max-width: 1199px) {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 78px;
+    }
+    @media screen and (max-width: 575px) {
+      grid-template-columns: 1fr;
+      row-gap: 48px;
+      padding: 40px 27px 40px;
+    }
+  }
+}

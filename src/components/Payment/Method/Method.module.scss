@@ -1,0 +1,107 @@
+@import "../../../assets/fonts/fonts";
+
+.method {
+  @media screen and (max-width: 1199px) {
+    padding: 40px 0;
+    order: 2;
+  }
+  h1 {
+    font-family: '"PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 45px;
+  }
+
+  button {
+    @media screen and (max-width: 767px) {
+      width: 50% !important;
+    }
+    @media screen and (max-width: 575px) {
+      width: 100% !important;
+    }
+  }
+
+
+  &List {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 37px;
+    @media screen and (max-width: 767px) {
+
+    }
+  }
+
+}
+
+.fields {
+  margin-top: 44px;
+  margin-bottom: 41px;
+  width: 60%;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  &Line {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  &TwoLine {
+    display: grid;
+    grid-template-columns: 50% calc(50% - 43px);
+    grid-column-gap: 43px;
+  }
+
+  &ThreeLine {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.3% - 20px / 2));
+    grid-column-gap: 15px;
+  }
+
+  &Row {
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
+  }
+}
+
+.field {
+  height: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.5px solid #93A603;
+  padding: 7px 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #93A603;
+
+  &:focus, &:focus-within, &:active, &:focus-visible {
+    outline: none;
+  }
+  &::placeholder {
+    color: #ADADAD;
+  }
+
+}
+
+.save {
+  margin-bottom: 36px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2B3E00;
+  input {
+    margin-right: 9px;
+  }
+}

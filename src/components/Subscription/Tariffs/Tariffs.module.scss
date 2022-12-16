@@ -1,0 +1,12 @@
+.tariffs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 33.33%));
+  grid-gap: 80px;
+  @media screen and (max-width: 1199px) {
+    grid-template-columns: repeat(2, minmax(300px, 50%));
+    grid-gap: 40px;
+  }
+  @media screen and (max-width: 991px) {
+    grid-template-columns: repeat(1, minmax(200px, 100%));
+  }
+}

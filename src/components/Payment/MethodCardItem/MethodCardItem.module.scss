@@ -1,0 +1,60 @@
+.root {
+  border-radius: 50%;
+  background: #ffffff;
+  color: #2B3E00;
+  border: 0.5px solid #ADADAD;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 130px;
+  height: 130px;
+
+  @media screen and (max-width: 1199px) {
+    width: 84px;
+    height: 84px;
+  }
+
+  &.active {
+    background: #93A603;
+    border: 0.5px solid #93A603;
+    color: #ffffff;
+    .image path {
+        fill: white;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+
+
+  .title {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    @media screen and (max-width: 1199px) {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+  }
+}
+
+
+.image {
+  margin-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    max-width: 33px;
+    max-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

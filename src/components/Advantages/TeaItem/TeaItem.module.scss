@@ -1,0 +1,81 @@
+@import '../../../assets/fonts/fonts';
+
+.tea {
+  //width: 380px;
+  width: 220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+
+  @media screen and (max-width: 575px) {
+    margin: 0 auto 0 0;
+  }
+
+  &:nth-child(2n) {
+    align-self: flex-start;
+  }
+  &:nth-child(2n + 1) {
+    align-self: flex-end;
+  }
+
+  &Description {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    font-size: 18px;
+    line-height: 23px;
+    color: #2B3E00;
+  }
+
+  &Images {
+    margin-bottom: 33px;
+    position: relative;
+  }
+  
+  &Image {
+    &:first-child {
+      position: absolute;
+      z-index: 2;
+      left: 15%;
+      bottom: 0;
+    }
+    &:last-child {
+      position: relative;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &Title {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 30px;
+    color: #2B3E00;
+  }
+
+  &SubTitle {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #2B3E00;
+  }
+
+  &Package {
+    font-size: 18px;
+    line-height: 23px;
+    color: #ADADAD;
+    & > span:first-child {
+      margin-right: 26px;
+    }
+  }
+
+  &Actions {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

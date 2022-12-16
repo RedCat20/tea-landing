@@ -1,0 +1,44 @@
+.description {
+  margin-top: 96px;
+  height: 581px;
+  padding: 0 116px;
+  background-size: cover;
+  background: url("../../../assets/images/subscription/subscription.jpg") center center;
+  @media screen and (max-width: 767px) {
+    padding: 0 76px;
+    min-height: 378px;
+    height: 100%;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 0 36px;
+  }
+}
+
+.info {
+  max-width: 335px;
+  padding: 67px 40px 60px 60px;
+  color: #FFFFFF;
+  background: #93A603;
+  height: 100%;
+
+
+  @media screen and (max-width: 767px) {
+    padding: 37px 20px 30px 20px;
+    max-width: 100%;
+    min-height: 378px;
+  }
+  h1 {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  p {
+    font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

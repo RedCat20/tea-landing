@@ -1,0 +1,88 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid #2B3E00;
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.main {
+  @media screen and (max-width: 991px) {
+    margin-bottom: 20px;
+  }
+  &Logo {
+    margin-bottom: 21px;
+  }
+  &Link {
+    margin-bottom: 5px;
+    a {
+      color: #2B3E00;
+    }
+  }
+}
+
+.links, .contacts {
+  margin-top: 17px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 45px;
+
+  @media screen and (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  &Block {
+    display: flex;
+    flex-direction: column;
+    & > a {
+      font-family: 'PT-Root-UI_Medium 500', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 17px;
+      color: #93A603;
+    }
+    & > a:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 991px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.contacts {
+  font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media screen and (max-width: 991px) {
+    margin-top: 20px;
+  }
+  &Phone {
+    margin-bottom: 6px;
+    a {
+      font-size: 30px;
+      line-height: 38px;
+      font-feature-settings: 'ordn' on;
+      color: #2B3E00;
+      @media screen and (max-width: 991px) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+  &Email {
+    margin-bottom: 18px;
+    a {
+      font-size: 22px;
+      line-height: 28px;
+      color: #93A603;
+    }
+  }
+}

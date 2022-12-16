@@ -1,0 +1,72 @@
+@import '../../../assets/fonts/fonts';
+
+.quote {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: 1199px) {
+    //grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    //grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 575px) {
+    //grid-template-columns: 1fr;
+  }
+
+  &Block {
+    flex: 0 1 33.33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+
+    @media screen and (max-width: 1199px) {
+      height: 198px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 87px;
+      &:nth-child(1) {
+        order: 2;
+        flex: 0 1 50%;
+      }
+      &:nth-child(2) {
+        order: 1;
+        flex: 0 1 100%;
+      }
+      &:nth-child(3) {
+        order: 3;
+        flex: 0 1 50%;
+      }
+    }
+  }
+
+  &Text {
+    font-family: 'PT Root UI Web 500', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F4F4F4;
+
+    padding: 106px 80px;
+
+
+    @media screen and (max-width: 1199px) {
+      font-size: 16px;
+      line-height: 22px;
+
+      padding: 66px 66px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 220px;
+      padding: 25px 0;
+      font-size: 14px;
+      line-height: 19px;
+      color: #F4F4F4;
+    }
+  }
+}

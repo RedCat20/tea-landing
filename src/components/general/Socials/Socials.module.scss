@@ -1,0 +1,6 @@
+.socials {
+  display: flex;
+  &Icon:not(:last-child) {
+    margin-right: 13px;
+  }
+}

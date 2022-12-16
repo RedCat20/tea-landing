@@ -1,0 +1,36 @@
+.button {
+  padding-left: 44px;
+  padding-right: 44px;
+
+  //width: 190px;
+  height: 46px;
+
+  min-height: 46px;
+  border: none;
+  outline: none;
+
+  border-radius: 25.5px;
+
+  font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+.success {
+  background: #93A603;
+  color: #FFFFFF;
+  box-shadow: 0px 15px 40px -2px rgba(131, 151, 0, 0.41);
+}
+
+.light {
+  border: 0.5px solid #93A603;
+  background: #FFFFFF;
+  color: #93A603;
+}
+
+.secondary {
+  color: #FFFFFF;
+  background: #ADADAD;
+  box-shadow: 0px 15px 40px -2px rgba(173, 173, 173, 0.4);
+}

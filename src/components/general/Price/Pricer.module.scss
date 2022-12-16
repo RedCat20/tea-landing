@@ -1,0 +1,42 @@
+.price {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 38px;
+  &Text {
+    font-family: 'PT-Root-UI_Medium 700', Arial, sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    color: #2B3E00;
+  }
+}
+
+.amount {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 11px;
+}
+
+.countBtn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  &.decrease {
+    background: #FFFFFF;
+    color: #93A603;
+    border: 0.5px solid #93A603;
+  }
+  &.increase {
+    background: #93A603;
+    color: #FFFFFF;
+    border: 0.5px solid #93A603;
+  }
+}

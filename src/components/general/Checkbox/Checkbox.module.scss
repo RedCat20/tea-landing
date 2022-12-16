@@ -1,0 +1,45 @@
+.root {
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  input[type="checkbox"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.checkbox {
+  display: inline-block;
+  background: #fff;
+  border: 2px #ddd solid;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  padding: 3px 2px;
+  margin-right: 9px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.checkboxActive {
+  border-color: #93A603;
+  background: #93A603;
+}
+
+.title {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2B3E00;
+  position: relative;
+  top: 2px;
+}
