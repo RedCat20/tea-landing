@@ -1,3 +1,9 @@
+# DEMO:
+
+https://tea-landing.vercel.app
+
+It is a React mark-up only but this project will be develop in the future.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
